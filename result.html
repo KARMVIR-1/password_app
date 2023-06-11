@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Generator - Result</title>
+    <style>
+        body {
+            background-color: skyblue;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+        p {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Password Generator - Result</h1>
+    {% if password %}
+        <p>Your Password: {{ password }}</p>
+    {% else %}
+        <p>No password generated.</p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Generator</title>
+    <style>
+
+        
+        body {
+
+            background: rgb(2,0,36);
+background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(64, 64, 156) 35%, rgb(23, 198, 233) 100%);
+
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+        form {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2{
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>CLOUD PROJECT </h1>
+    <h2>Password Generator</h2>
+    <form action="/" method="POST">
+        <label>Password Length:</label>
+        <input type="number" name="length" required><br>
+    <label>Character Set:</label><br>
+    
+        <input type="checkbox" name="character_set" value="digits"> Digits <br>
+        <input type="checkbox" name="character_set" value="letters"> Letters <br>
+        <input type="checkbox" name="character_set" value="special_characters"> Special Characters 
+
+        <br>
+        <input type="submit" value="Generate Password"><br>
+    </form>
+</body>
+</html>
